@@ -176,17 +176,20 @@ namespace KursProjesii
 
         private void btnBul_Click(object sender, EventArgs e)
         {
-            List<string> SearchList = new List<string>();
+            List<string> SearchLisTag = new List<string>();
+            List<string> SearchListValue = new List<string>();
             try
             {
                 foreach (Control control in panelKurslar.Controls)
                 {
                     if (control.Text!=string.Empty && control.Text!=" ")
                     {
-                        SearchList.Add(control.Tag+" = '"+control.Text+"'");
+                        //SearchLisTag.Add(control.Tag+" = '"+control.Text+"'");
+                        SearchListValue.Add(control.Text);
+                        SearchLisTag.Add(control.Tag.ToString());
                     }
                 }
-                egitimDal.Search(SearchList);
+                egitimDal.Search( SearchLisTag, SearchListValue);
 
                 
                 

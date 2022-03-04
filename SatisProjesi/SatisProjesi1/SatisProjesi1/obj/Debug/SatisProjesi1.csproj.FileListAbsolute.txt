@@ -1,0 +1,10 @@
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\bin\Debug\SatisProjesi1.exe.config
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\bin\Debug\SatisProjesi1.exe
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\bin\Debug\SatisProjesi1.pdb
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.csproj.AssemblyReference.cache
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.Form1.resources
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.Properties.Resources.resources
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.csproj.GenerateResource.cache
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.csproj.CoreCompileInputs.cache
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.exe
+C:\Users\recep\OneDrive\Masaüstü\KursUygulamsı\KursProjesi\SatisProjesi\SatisProjesi1\SatisProjesi1\obj\Debug\SatisProjesi1.pdb

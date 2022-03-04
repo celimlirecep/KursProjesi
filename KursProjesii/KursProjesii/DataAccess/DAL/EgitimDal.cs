@@ -127,25 +127,33 @@ namespace KursProjesii.DataAccess.DAL
             }
                 
         }
-        public void Search(List<string> searchList)
+        public void Search(List<string> searchListTag , List<string> searchListValue)
         {
             try
             {
                 string parametre = string.Empty;
                 List<string> SearchParametre = new List<string>();
-                for (int i = 0; i < searchList.Count; i++)
+                List<string> param = new List<string>();
+                for (int i = 1; i < searchListTag.Count+1; i++)
                 {
-                    parametre = $" @p{i} ";
+                    parametre = $" {searchListTag[i-1]} =  @p{i}  ";
                     SearchParametre.Add(parametre);
+                    param.Add($" @p{i} ");
+
                 }
                 queryString = "SELECT * FROM tblEgitimler WHERE " +
                     $"{string.Join(",", SearchParametre)}";
+                   MessageBox.Show("PARAMETRELERİN YAN YANA  "+string.Join(",", SearchParametre));
+                MessageBox.Show("SORGU CÜMLEM : "+queryString);
+                
                 using (cmd = new SqlCommand(queryString, Baglanti.BaglantiNesnesi))
                 {
                     Baglanti.Ac();
-                    for (int i = 0; i < searchList.Count; i++)
+                    for (int i = 0; i < searchListTag.Count; i++)
                     {
-                        cmd.Parameters.Add($@"{SearchParametre[{i}]}", searchList[i]);
+                        MessageBox.Show("ADDWİTHVALUE STRİNG :"+param[i].ToString() + "  VALUE'Sİ " + searchListValue[i].ToString());
+                        cmd.Parameters.AddWithValue($"{param[i]}", searchListValue[i]);
+                      
                     }
                     cmd.ExecuteNonQuery();
                 }
