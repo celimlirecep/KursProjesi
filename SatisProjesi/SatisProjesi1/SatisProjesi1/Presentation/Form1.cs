@@ -30,8 +30,9 @@ namespace SatisProjesi1
                 SatisAdedi = Convert.ToInt32(txtStokAdedi.Text)
             };
             satisDAL.Insert(satislar);
-           // urunDAL.StockUpdate(satislar);
-
+             urunDAL.StockUpdate(satislar);
+            dgvUrun.DataSource = urunDAL.GetAll();
+            dgvSatis.DataSource = satisDAL.GetAll();
 
         }
 
@@ -40,6 +41,8 @@ namespace SatisProjesi1
             cmbUrunler.DataSource = urunDAL.GetAll();
             cmbUrunler.DisplayMember = "UrunAd";
             cmbUrunler.ValueMember = "ID";
+            dgvUrun.DataSource = urunDAL.GetAll();
+            dgvSatis.DataSource = satisDAL.GetAll();
            
 
         }

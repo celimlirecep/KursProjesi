@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\SatislarBL.cs" />
+    <Compile Include="Business\UrunlerBL.cs" />
     <Compile Include="DataAccess\BaglantiDAL\ConnectionDAL.cs" />
     <Compile Include="DataAccess\DAL\SatisDAL.cs" />
     <Compile Include="DataAccess\DAL\UrunDAL.cs" />
@@ -85,8 +87,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Business\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

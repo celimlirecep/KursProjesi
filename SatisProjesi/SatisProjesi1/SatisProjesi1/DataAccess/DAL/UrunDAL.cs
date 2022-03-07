@@ -47,10 +47,10 @@ namespace SatisProjesi1.DataAccess.DAL
                 return null;
             }
         }
-        public bool StockUpdate(Satislar satislar)
+        public void StockUpdate(Satislar satislar)
         {
             querySentence = "UPDATE tblUrunler SET StokMiktari=(StokMiktari-@P1) " +
-                "WHERE ID=@P2 ";
+                "WHERE ID=@P2 AND (StokMiktari-@P1)>0 ";
             try
             {
                 using (cmd=new SqlCommand(querySentence,ConnectionDAL.Adress))
@@ -60,11 +60,11 @@ namespace SatisProjesi1.DataAccess.DAL
                     cmd.Parameters.AddWithValue("@P2", satislar.UrunID);
                     cmd.ExecuteNonQuery();
                 }
-                return true;
+               
             }
             catch (Exception)
             {
-                return false;
+                
             }
             finally
             {

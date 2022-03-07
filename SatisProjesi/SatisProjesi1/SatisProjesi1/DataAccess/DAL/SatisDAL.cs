@@ -34,7 +34,7 @@ namespace SatisProjesi1.DataAccess.DAL
                                 ID = Convert.ToInt32(dr["ID"]),
                                 SatisTarihi=Convert.ToDateTime(dr["Satistarihi"]),
                                 UrunID=Convert.ToInt32(dr["UrunID"]),
-                                SatisAdedi=Convert.ToInt32(dr["SatisAdedi"])
+                                SatisAdedi=Convert.ToInt32(dr["SatisAdeti"])
                             };
                             satisListesi.Add(satislar);
                         }

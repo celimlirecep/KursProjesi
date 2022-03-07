@@ -36,6 +36,10 @@ namespace SatisProjesi1
             this.cmbUrunler = new System.Windows.Forms.ComboBox();
             this.txtStokAdedi = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
+            this.dgvUrun = new System.Windows.Forms.DataGridView();
+            this.dgvSatis = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrun)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSatis)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpUrunlerSatisTarihi
@@ -100,11 +104,29 @@ namespace SatisProjesi1
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
+            // dgvUrun
+            // 
+            this.dgvUrun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUrun.Location = new System.Drawing.Point(21, 167);
+            this.dgvUrun.Name = "dgvUrun";
+            this.dgvUrun.Size = new System.Drawing.Size(321, 164);
+            this.dgvUrun.TabIndex = 5;
+            // 
+            // dgvSatis
+            // 
+            this.dgvSatis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSatis.Location = new System.Drawing.Point(357, 167);
+            this.dgvSatis.Name = "dgvSatis";
+            this.dgvSatis.Size = new System.Drawing.Size(485, 150);
+            this.dgvSatis.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 343);
+            this.ClientSize = new System.Drawing.Size(854, 343);
+            this.Controls.Add(this.dgvSatis);
+            this.Controls.Add(this.dgvUrun);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.txtStokAdedi);
             this.Controls.Add(this.cmbUrunler);
@@ -115,6 +137,8 @@ namespace SatisProjesi1
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrun)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSatis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +153,8 @@ namespace SatisProjesi1
         private System.Windows.Forms.ComboBox cmbUrunler;
         private System.Windows.Forms.TextBox txtStokAdedi;
         private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.DataGridView dgvUrun;
+        private System.Windows.Forms.DataGridView dgvSatis;
     }
 }
 

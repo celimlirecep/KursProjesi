@@ -152,8 +152,8 @@ namespace KursProjesii.DataAccess.DAL
                     for (int i = 0; i < searchListTag.Count; i++)
                     {
                         MessageBox.Show("ADDWİTHVALUE STRİNG :"+param[i].ToString() + "  VALUE'Sİ " + searchListValue[i].ToString());
-                        cmd.Parameters.AddWithValue($"{param[i]}", searchListValue[i]);
-                      
+                        cmd.Parameters.AddWithValue($"{param[i]}", searchListValue[i]); 
+
                     }
                     cmd.ExecuteNonQuery();
                 }
